@@ -1,8 +1,12 @@
     <div class="footer">
       <div class="container">
+      {pc:content action="lists" catid="49" num="1" order="id DESC"}
+        {loop $data $r}
         <div class="code">
-          <img src="{IMG_PATH}shoushi/code.jpg" alt="">
+          <img src="{$r[thumb]}" alt="{$r[title]}">
         </div>
+        {/loop}
+      {/pc}
         <div class="fot-cont">
           <p>
             <ul class="fot-cont-nav">
